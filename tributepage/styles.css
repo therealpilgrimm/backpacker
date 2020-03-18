@@ -1,6 +1,5 @@
 .container {
   display: grid;
-  height: auto;
 }
 
 header, main, footer {
@@ -21,26 +20,39 @@ header, main, footer {
   height: 40%;
   margin-left: 1em;
   top: 0;
+  transition: 300ms ease-out;
+  z-index: 4;
 }
 #logo:hover {
-  filter: hue-rotate(180deg);
-  transition: 200ms ease-out;
+  filter: brightness(50);
+  transition: 1000ms ease-out;
 }
 
 main {
   display: flex;
+
   position: relative;
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   z-index: 2;
-  justify-items: center;
+  width: 100%;
+  justify-content: center;
+  
+  
   
 }
 
+
+
 main p{
+  display: block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
+  width: 10em;
+  margin: auto 0;
 }
+
 
 .footeroverlay {
   position: relative;
@@ -66,5 +78,25 @@ footer {
   font-size: 3rem;
   margin-top: 3rem;
   display: block;
+
+}
+
+
+::selection {
+  background: #b11016;
+  color: white;
+}
+
+::-moz-selection {
+  background: #b11016;
+  color: white;
+}
+
+i {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 5;
+  color: brown;
 
 }
