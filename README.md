@@ -1,1 +1,1 @@
-This is HTML  & CSS 
+This is my first responsive website, while I was learning HTML and CSS
